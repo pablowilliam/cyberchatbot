@@ -1,5 +1,5 @@
 import Banner from "../components/Banner";
-import Footer from "../components/Footer";
+import Footer1 from "../components/Footer1";
 import Navbar from "../components/Navbar";
 
 const HomePage = () => {
@@ -7,7 +7,7 @@ const HomePage = () => {
     <div>
       <Navbar />
       <Banner />
-      <Footer />
+      <Footer1 />
     </div>
   );
 };

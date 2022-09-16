@@ -1,3 +1,5 @@
+const colors = require("tailwindcss/colors");
+const defaultTheme = require("tailwindcss/defaultTheme");
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -5,6 +7,14 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    colors: {
+      ...colors,
+      cyan: "#2e7B8c",
+      sky: "#30B1BF",
+      blue: "#2EF2F2",
+      yellow: "#F2AF5C",
+      gray: "#F2F2F2",
+    },
     screens: {
       sm: "640px",
       // => @media (min-width: 640px) { ... }
@@ -22,6 +32,25 @@ module.exports = {
       // => @media (min-width: 1536px) { ... }
     },
   },
-  extend: {},
+  extend: {
+    fontFamily: {
+      sans: ["Poppins", "sans-serif", ...defaultTheme.fontFamily.sans],
+    },
+    fontSize: {
+      sm: ["14px", "20px"],
+      base: ["16px", "24px"],
+      lg: ["20px", "28px"],
+      xl: ["24px", "32px"],
+      "4xl": "2.5rem",
+      readTitle: "2.3rem",
+    },
+    colors: {
+      primary: "#2e7B8c",
+      sky: "#30B1BF",
+      blue: "#2EF2F2",
+      yellow: "#F2AF5C",
+      gray: "#F2F2F2",
+    },
+  },
   plugins: [],
 };
