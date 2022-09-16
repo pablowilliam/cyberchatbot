@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="w-full py-8 bg-gray-600">
+    <footer className="w-full py-8 bg-slate-200">
       {" "}
       {/* Container */}
       <h2 className="sr-only">Footer</h2>
@@ -91,7 +91,7 @@ const Footer = () => {
           {/* :CONTACT */}
           <div className="px-2 flex flex-col">
             {/* Email */}
-            <p className="flex text-xs text-gray-300 font-medium tracking-wide">
+            <p className="flex text-xs text-gray-300 font-medium tracking-wide py-1">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="mr-1 h-5 w-5"
@@ -126,7 +126,7 @@ const Footer = () => {
 
         {/* :COPYRIGHT */}
         <p className="pt-10 text-sm text-gray-300 text-center">
-          &copy;2022, CyberChat Todos os direitos reservados.
+          &copy;2022, CYBERCHAT Todos os direitos reservados.
         </p>
       </div>
     </footer>
