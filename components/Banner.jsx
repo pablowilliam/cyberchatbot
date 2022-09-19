@@ -10,11 +10,11 @@ const Banner = () => {
           </h1>
           <p className="text-gray text-xl py-6 tracking-wide leading-relaxed">
             Automação e desenvolvimento para a sua empresa de uma forma prática
-            e funcional
+            e funcional.
           </p>
         </div>
         <div className="w-full sm:w-1/2 fade-up">
-          <img className="w-full" alt="banner" src="/images/banner.png" />
+          <img className="w-full" alt="banner" src="images/banner.png" />
         </div>
       </div>
     </div>

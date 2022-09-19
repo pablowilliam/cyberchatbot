@@ -19,7 +19,7 @@ const Navbar = () => {
           />
 
           <span className="ml-3 text-xl text-black font-semibold antialiased">
-            CYBERCHAT
+            CyberChatBot
           </span>
         </a>
         {/* ::Navbar */}

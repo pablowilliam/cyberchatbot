@@ -31,7 +31,7 @@ const Pricing1 = () => {
   );
 
   return (
-    <div className="container flex mx-auto w-full py-10 px-5 flex flex-col items-center bg-cyan  font-body">
+    <div className="container flex mx-auto w-full py-10 px-5 flex flex-col items-center bg-cyan font-body">
       {" "}
       {/* Container */}
       {/* :TITLE */}
@@ -73,7 +73,7 @@ const Pricing1 = () => {
             </li>
             <li className="mb-4 inline-flex ">
               <CheckIcon />
-              Configuração de filas de chatbot
+              Configuração de filas de chatbot.
             </li>
             <li className="mb-4 inline-flex ">
               <CheckIcon />
@@ -82,7 +82,9 @@ const Pricing1 = () => {
           </ul>
           {/* Subscribe */}
           <button className="py-2 px-10 rounded-3xl bg-cyan text-lg text-gray font-medium tracking-wide antialiased shadow-lg transition duration-100 ease-in transform hover:scale-105 hover:bg-sky">
-            Assinar plano
+            <a href="https://wa.me/351939121286?text=Gostaria%20de%20saber%20mais%20sobre%20o%20CyberChatBot%20Plano%20Mensal">
+              Assinar plano
+            </a>
           </button>
         </div>
 
@@ -114,7 +116,7 @@ const Pricing1 = () => {
             </li>
             <li className="mb-4 inline-flex ">
               <CheckIcon />
-              Configuração de filas de chatbot
+              Configuração de filas de chatbot.
             </li>
             <li className="mb-4 inline-flex ">
               <CheckIcon />
@@ -123,7 +125,9 @@ const Pricing1 = () => {
           </ul>{" "}
           {/* Subscribe */}
           <button className="py-2 px-10 rounded-3xl bg-cyan text-lg text-gray font-medium tracking-wide antialiased shadow-lg transition duration-100 ease-in transform hover:scale-105 hover:bg-sky">
-            Assinar plano
+            <a href="https://wa.me/351939121286?text=Gostaria%20de%20saber%20mais%20sobre%20o%20CyberChatBot%20Plano%20Semestral">
+              Assinar plano
+            </a>
           </button>
         </div>
 
@@ -155,7 +159,7 @@ const Pricing1 = () => {
             </li>
             <li className="mb-4 inline-flex ">
               <CheckIcon />
-              Configuração de filas de chatbot
+              Configuração de filas de chatbot.
             </li>
             <li className="mb-4 inline-flex ">
               <CheckIcon />
@@ -164,7 +168,9 @@ const Pricing1 = () => {
           </ul>{" "}
           {/* Subscribe */}
           <button className="py-2 px-10 rounded-3xl bg-cyan text-lg text-gray font-medium tracking-wide antialiased shadow-lg transition duration-100 ease-in transform hover:scale-105 hover:bg-sky">
-            Assinar plano
+            <a href="https://wa.me/351939121286?text=Gostaria%20de%20saber%20mais%20sobre%20o%20CyberChatBot%20Plano%20Anual">
+              Assinar plano
+            </a>
           </button>
         </div>
       </div>

@@ -1,89 +1,131 @@
 import React from "react";
 
-import Link from "next/link";
-import { FaInstagram } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
-import { FaYoutube } from "react-icons/fa";
-import { FaFacebook } from "react-icons/fa";
-
 const Footer = () => {
   return (
-    <footer>
-      <div className="footer bg-gray-50 h-1/2 w-full py-6 pl-4">
-        <div className="container flex md:flex-row flex-col justify-between items-start mx-auto">
-          <div className="py-5">
-            <img
-              src="/images/logo.png"
-              className="mr-3 h-24 sm:h-24"
-              alt="logo"
-            />
+    <footer className="w-full py-8 bg-slate-200">
+      {" "}
+      {/* Container */}
+      <h2 className="sr-only">Footer</h2>
+      <div className="mx-auto max-w-7xl flex flex-col items-center text-gray-200">
+        <div className="w-full flex flex-col md:flex-row flex-wrap justify-between items-center">
+          {/* :SOCIAL NETWORKS */}
+          <div className="py-4 px-2 flex">
+            {/* Facebook */}
+            <a
+              href="https://pt-br.facebook.com/cyberchatbot.pt"
+              className="text-gray-200"
+              target="blank"
+            >
+              <span className="sr-only">Facebook</span>
+              <svg
+                fill="currentColor"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                className="w-6 h-6"
+                viewBox="0 0 24 24"
+              >
+                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+              </svg>
+            </a>
+            {/* Instagram */}
+            <a
+              href="https://www.instagram.com/cyberchatbot/"
+              className="ml-3 text-gray-200"
+              target="blank"
+            >
+              <span className="sr-only">Instagram</span>
+              <svg
+                fill="none"
+                stroke="currentColor"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                className="w-6 h-6"
+                viewBox="0 0 24 24"
+              >
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+              </svg>
+            </a>
+            {/* Linkedin */}
+            <a
+              href="https://www.linkedin.com/"
+              className="ml-3 text-gray-200"
+              target="blank"
+            >
+              <span className="sr-only">Linkedin</span>
+              <svg
+                fill="currentColor"
+                stroke="currentColor"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="0"
+                className="w-6 h-6"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke="none"
+                  d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
+                ></path>
+                <circle cx="4" cy="4" r="2" stroke="none"></circle>
+              </svg>
+            </a>
           </div>
-          <div className="flex flex-col py-5">
-            <Link href="/" passHref>
-              <a className="text-gray-500 text-md pb-2 font-semibold hover:text-cyan-700 cursor-pointer">
-                Início
-              </a>
-            </Link>
-            <Link href="/contato" passHref>
-              <a className="text-gray-500 text-md pb-2 font-semibold hover:text-cyan-700 cursor-pointer">
-                Contato
-              </a>
-            </Link>
-          </div>
-          <div className="py-5">
-            <ul>
-              <p className="text-gray-600 text-lg font-semibold pb-6">
-                <span>Acompanhe nas redes sociais</span>
-              </p>
-              <div className="flex gap-6">
-                <div className="text-2x1 cursor-pointer hover:text-cyan-700">
-                  <Link href="https://www.instagram.com" passHref>
-                    <a>
-                      <FaInstagram />
-                    </a>
-                  </Link>
-                </div>
-                <div className="text-2x1 cursor-pointer hover:text-cyan-700">
-                  <Link href="https://www.facebook.com" passHref>
-                    <a>
-                      <FaFacebook />
-                    </a>
-                  </Link>
-                </div>
-                <div
-                  className="text-2x1 cursor-pointer hover:text-cyan-700"
-                  target="blank"
-                >
-                  <Link href="https://www.twitter.com" passHref>
-                    <a>
-                      <FaTwitter />
-                    </a>
-                  </Link>
-                </div>
-                <div className="text-2x1 cursor-pointer hover:text-cyan-700">
-                  <Link href="https://www.linkedin.com" passHref>
-                    <a>
-                      <FaLinkedin />
-                    </a>
-                  </Link>
-                </div>
-                <div className="text-2x1 cursor-pointer hover:text-cyan-700">
-                  <Link href="https://www.youtube.com" passHref>
-                    <a>
-                      <FaYoutube />
-                    </a>
-                  </Link>
-                </div>
-              </div>
-            </ul>
+
+          {/* :NAVIGATION */}
+          <nav className="py-4 px-2 flex flex-wrap justify-center list-none">
+            <li className="p-3 hover:font-semibold">
+              <a href="#link">Benefícios</a>
+            </li>
+            <li className="p-3 hover:font-semibold">
+              <a href="#link">Planos</a>
+            </li>
+            <li className="p-3 hover:font-semibold">
+              <a href="#link">Contato</a>
+            </li>
+          </nav>
+
+          {/* :CONTACT */}
+          <div className="px-2 flex flex-col">
+            {/* Email */}
+            <p className="flex text-xs text-gray-300 font-medium tracking-wide py-1">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="mr-1 h-5 w-5"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+              </svg>
+              <a href="#email">suporte@cyberchatbot.pt</a>
+            </p>
+            {/* Phone */}
+            <p className="flex text-xs text-gray-300 font-bold">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="mr-1 h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                />
+              </svg>
+              <span>+351 939 121 286</span>
+            </p>
           </div>
         </div>
-      </div>
-      <div className="flex flex-col py-5 bg-cyan-700 items-center">
-        <h1 className="text-white text-sm text-center">
-          CyberChat © 2022 . Todos os direitos reservados.
-        </h1>
+
+        {/* :COPYRIGHT */}
+        <p className="pt-10 text-sm text-gray-300 text-center">
+          &copy; 2022, CyberChatBot Todos os direitos reservados.
+        </p>
       </div>
     </footer>
   );
