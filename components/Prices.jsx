@@ -31,7 +31,7 @@ const Pricing1 = () => {
   );
 
   return (
-    <div className="bg-cyan w-full mt-10">
+    <div id="plans" className="bg-cyan w-full mt-10">
       <div className="container flex mx-auto py-10 px-5 flex flex-col items-center font-body">
         {" "}
         {/* Container */}

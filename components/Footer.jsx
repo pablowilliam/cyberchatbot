@@ -77,10 +77,10 @@ const Footer = () => {
             {/* :NAVIGATION */}
             <nav className="py-4 flex flex-wrap justify-center list-none md:w-1/3">
               <li className="p-3 hover:font-semibold">
-                <a href="#link">Benefícios</a>
+                <a href="#benefits">Benefícios</a>
               </li>
               <li className="p-3 hover:font-semibold">
-                <a href="#link">Planos</a>
+                <a href="#plans">Planos</a>
               </li>
               <li className="p-3 hover:font-semibold">
                 <a href="#link">Contato</a>

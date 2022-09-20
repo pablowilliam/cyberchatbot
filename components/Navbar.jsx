@@ -1,24 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { useRef } from "react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-
-  gsap.registerPlugin(ScrollTrigger);
-  const navbar = useRef();
-  useEffect(() => {
-    gsap.to(navbar.current, {
-      scrollTrigger: {
-        start: "120px top",
-        toggleActions: "play none none reverse",
-      },
-      y: 0,
-      opacity: 1,
-      position: "fixed",
-    });
-  });
 
   return (
     <header className="w-full bg-white text-black shadow-sm sticky top-0">
@@ -26,7 +9,7 @@ export const Navbar = () => {
       <div className="container mx-auto flex justify-between items-center py-4 px-5 ">
         {/* ::Site logo and Naame */}
         <a
-          href="#link"
+          href="/"
           className="flex flex-shrink-0 title-font font-medium items-center text-gray-900 md:mb-0"
         >
           <img
@@ -41,13 +24,13 @@ export const Navbar = () => {
         </a>
         {/* ::Navbar */}
         <nav className="hidden md:mr-auto md:ml-4 md:pl-4 md:border-l md:border-gray-500 md:flex flex-wrap items-center justify-center text-sm tracking-wide">
-          <a href="#link" className="mr-8 hover:text-cyan">
+          <a href="#benefits" className="mr-8 hover:text-cyan ">
             BENEFÍCIOS
           </a>
           <a href="#link" className="mr-8 hover:text-cyan">
             COMO FUNCIONA
           </a>
-          <a href="#link" className="mr-8 hover:text-cyan">
+          <a href="#plans" className="mr-8 hover:text-cyan">
             PLANOS
           </a>
           <a href="#link" className="mr-8 hover:text-cyan">
@@ -82,7 +65,7 @@ export const Navbar = () => {
       {isOpen && (
         <div className="w-full flex flex-col py-4 px-3 md:hidden bg-cyan text-sm uppercase text-center font-semibold">
           <a
-            href="#link"
+            href="#benefits"
             className="block px-3 py-2 rounded-md text-gray hover:text-white hover:bg-gray-700"
           >
             Benefícios
@@ -94,7 +77,7 @@ export const Navbar = () => {
             Como funciona
           </a>
           <a
-            href="#link"
+            href="#plans"
             className="block px-3 py-2 rounded-md text-gray hover:text-white hover:bg-gray-700"
           >
             Planos
