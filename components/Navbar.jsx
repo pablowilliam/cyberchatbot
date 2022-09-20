@@ -1,12 +1,29 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
-const Navbar = () => {
+export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
+  gsap.registerPlugin(ScrollTrigger);
+  const navbar = useRef();
+  useEffect(() => {
+    gsap.to(navbar.current, {
+      scrollTrigger: {
+        start: "120px top",
+        toggleActions: "play none none reverse",
+      },
+      y: 0,
+      opacity: 1,
+      position: "fixed",
+    });
+  });
+
   return (
-    <header className="w-full bg-white text-black shadow-sm">
+    <header className="w-full bg-white text-black shadow-sm sticky top-0">
       {/* :DESKTOP MENU */}
-      <div className="container mx-auto flex justify-between items-center py-4 px-5">
+      <div className="container mx-auto flex justify-between items-center py-4 px-5 ">
         {/* ::Site logo and Naame */}
         <a
           href="#link"

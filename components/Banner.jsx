@@ -13,7 +13,7 @@ const Banner = () => {
             e funcional.
           </p>
         </div>
-        <div className="w-full sm:w-1/2 fade-up">
+        <div className="w-full sm:w-1/2 fade-up ">
           <img className="w-full" alt="banner" src="images/banner.png" />
         </div>
       </div>
