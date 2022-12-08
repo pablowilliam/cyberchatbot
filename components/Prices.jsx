@@ -54,7 +54,7 @@ const Pricing1 = () => {
             </h2>
             {/* Price */}
             <div className="p-4 flex items-baseline">
-              <h3 className="font-title text-5xl font-bold ">€ 50</h3>
+              <h3 className="font-title text-5xl font-bold ">€ 15</h3>
             </div>
             {/* Divide line */}
             <span className="w-28 h-1.5 bg-sky-600 rounded-3xl" />
@@ -97,7 +97,7 @@ const Pricing1 = () => {
             </h2>
             {/* Price */}
             <div className="p-4 flex items-baseline">
-              <h3 className="font-title text-5xl font-bold ">€ 270</h3>
+              <h3 className="font-title text-5xl font-bold ">€ 81</h3>
             </div>
             {/* Divide line */}
             <span className="w-28 h-1.5 bg-sky-600 rounded-3xl" />
@@ -140,7 +140,7 @@ const Pricing1 = () => {
             </h2>
             {/* Price */}
             <div className="p-4 flex items-baseline">
-              <h3 className="font-title text-5xl font-bold ">€ 450</h3>
+              <h3 className="font-title text-5xl font-bold ">€ 144</h3>
             </div>
             {/* Divide line */}
             <span className="w-28 h-1.5 bg-sky-600 rounded-3xl" />
